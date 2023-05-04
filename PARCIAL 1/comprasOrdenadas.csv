@@ -1,0 +1,24 @@
+codigo, descripcion, origen, precio unitario, cantidad, total
+114, Anotador cuadriculado, 2, 145.00, 10, 1450.00
+120, Bandas elasticas, 2, 180.00, 10, 1800.00
+105, Bibliorato azul, 3, 145.00, 40, 5800.00
+112, Bibliorato rojo, 1, 145.00, 20, 2900.00
+111, Boligrafo azul, 2, 250.00, 10, 2500.00
+124, Boligrafo negro, 1, 250.00, 10, 2500.00
+101, Bolígrafo azul, 1, 250.00, 10, 2500.00
+113, Borra tinta, 1, 200.00, 6, 1200.00
+104, Borra tinta, 2, 200.00, 4, 800.00
+122, Caja Archivo, 3, 425.30, 10, 4253.00
+107, Caja Cartón Organizadora, 3, 450.00, 30, 13500.00
+103, Folios A4, 3, 450.25, 20, 9005.00
+115, Folios Oficio, 2, 450.25, 50, 22512.50
+119, Ganchos clips, 2, 260.00, 10, 2600.00
+116, Goma de lapiz, 1, 80.00, 6, 480.00
+118, Grampas Nro 10, 1, 385.60, 10, 3856.00
+123, Grampas Nro 12, 1, 86.00, 20, 1720.00
+110, Lapiz negro, 1, 126.80, 10, 1268.00
+102, Resma A4, 1, 860.00, 5, 4300.00
+109, Resma Oficio, 2, 750.25, 15, 11253.75
+106, Separadores A4, 2, 45.66, 50, 2283.00
+121, Separadores Oficio, 3, 46.00, 60, 2760.00
+108, Sobre Oficio, 1, 16.20, 60, 972.00

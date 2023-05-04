@@ -1,0 +1,11 @@
+codigo, descripcion, origen, precio unitario, cantidad, total
+101, Bolígrafo azul, 1, 250.00, 10, 2500.00
+102, Resma A4, 1, 860.00, 5, 4300.00
+108, Sobre Oficio, 1, 16.20, 60, 972.00
+110, Lapiz negro, 1, 126.80, 10, 1268.00
+112, Bibliorato rojo, 1, 145.00, 20, 2900.00
+113, Borra tinta, 1, 200.00, 6, 1200.00
+116, Goma de lapiz, 1, 80.00, 6, 480.00
+118, Grampas Nro 10, 1, 385.60, 10, 3856.00
+123, Grampas Nro 12, 1, 86.00, 20, 1720.00
+124, Boligrafo negro, 1, 250.00, 10, 2500.00
