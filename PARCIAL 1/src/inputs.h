@@ -1,45 +1,89 @@
 #ifndef INPUTS_H_
 #define INPUTS_H_
 
-/**
- * @fn int getInt(char*, char*, int, int)
- * @brief this ask the user to enter an int number and validates it
- *
- * @param _msg the message that will show up
- * @param _errMsg the message that will show up if there was an error with the input (< min or > max)
- * @param _min the minimum possible number
- * @param _max the maximum possible number
- * @return returns the int number entered
- */
-int getInt(char *_msg, char *_errMsg, int _min, int _max);
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+#include <conio.h>
 
 /**
- * @fn int getCharacter(char*, char*)
- * @brief this asks the user to enter a char and validates it
+ * @brief pide al usuario que ingrese un numero entero y lo valida
  *
- * @param _character where the char will be stored
- * @param _msg the message that will show up
- * @return (-1) if error (character variable is null or message not found) - (0) if ok
+ * @param entero puntero al entero ingresado
+ * @param mensaje el mensaje que verá el usuario
+ * @param mensajeError el mensaje que verá el usuario en caso de error
+ * @param min el numero minimo que puede ingresar
+ * @param max el numero maximo que puede ingresar
+ * @return -1 en caso de error, 1 en caso de que no lo haya
  */
-int getCharacter(char *_char, char *_msg);
+int pedirEntero(int *entero, char *mensaje, char *mensajeError, int min, int max);
 
 /**
- * @fn int verify(char*)
- * @brief this asks the user to enter a char and validates if its an 's' or an 'S'
+ * @brief valida que el caracter ingresado sea flotante
  *
- * @param _msg the message that will show up
- * @return (-1) if error (character is not an 's' or an 'S') - (0) if ok
+ * @param caracter el caracter ingresado por el usuario
+ * @return 0 para error, 1 si no lo hay
  */
-int verify(char *_msg);
+int validarFlotante(char* caracter);
 
 /**
- * @fn void printLine(char*)
- * @brief This shows a separator with a message (or not)
+ * @brief pide al usuario que ingrese un numero flotante y lo valida
  *
- * @param _msg the message that will be in the middle of the separator
+ * @param flotante puntero al flotante ingresado
+ * @param mensaje el mensaje que verá el usuario
+ * @param mensajeError el mensaje que verá el usuario en caso de error
+ * @param min el numero minimo que puede ingresar
+ * @param max el numero maximo que puede ingresar
+ * @return -1 en caso de error, 1 en caso de que no lo haya
  */
-void printLine(char *_msg);
+float pedirFlotante(float *flotante, char *mensaje, char *mensajeError, float min, float max);
 
-int menuOpcionFiltrarPorOrigen();
+/**
+ * @brief pide al usuario el ingreso de una cadena y la valida
+ *
+ * @param cadena puntero a la cadena ingresada
+ * @param mensaje el mensaje que verá el usuario
+ * @param mensajeError el mensaje que verá el usuario en caso de error
+ * @param max el maximo largo de cadena permitido
+ * @return -1 en caso de error, 1 en caso de que no lo haya
+ */
+int pedirCadena(char *cadena, char *mensaje, char *mensajeError, int max);
+
+/**
+ * @brief valida que el caracter ingresado sea alfabetico
+ *
+ * @param letra puntero al caracter ingresado
+ * @return -1 en caso de error, 1 en caso de que no lo haya
+ */
+int validarLetra(char *letra);
+
+/**
+ * @brief solicita al usuario una cadena que permite solo caracteres alfabeticos
+ *
+ * @param cadena puntero a la cadena ingresada
+ * @param mensaje el mensaje que verá el usuario
+ * @param mensajeError el mensaje que verá el usuario en caso de error
+ * @param max el maximo largo de cadena permitido
+ * @return -1 en caso de error, 1 en caso de que no lo haya
+ */
+int pedirCadenaAlfabetica(char *cadena, char *mensaje, char *mensajeError, int max);
+
+/**
+ * @brief pide al usuario que ingrese un caracter
+ *
+ * @param caracter puntero al caracter ingresado
+ * @param mensaje el mensaje que verá el usuario
+ * @return -1 en caso de error, 1 en caso de que no lo haya
+ */
+int pedirCaracter(char *caracter, char *mensaje);
+
+/**
+ * @brief pide al ususario verificar si quiere realizar una accion
+ *
+ * @param mensaje el mensaje impreso al usuario
+ * @return -1 en caso de error, 0 en caso de que no lo haya
+ */
+int verificarConfirmacion(char *mensaje);
 
 #endif /* INPUTS_H_ */
